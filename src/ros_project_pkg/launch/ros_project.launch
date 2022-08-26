@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <rosparam command="load" file="src/ros_project_pkg/config/ros_project.yaml"/>     
+    <node name="go_to_controller" pkg="ros_project_pkg" type="go_to_controller.py"/>
+    <node name="turtle" pkg="turtlesim" type="turtlesim_node"/>   
+</launch>
